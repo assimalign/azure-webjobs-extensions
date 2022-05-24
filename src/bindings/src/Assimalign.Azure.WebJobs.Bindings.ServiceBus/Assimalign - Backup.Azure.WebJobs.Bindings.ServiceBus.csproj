@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;netcoreapp3.1;net5.0</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Copyright>© Assimalign LLC 2021</Copyright>
+		<Version>1.0.5-pre.1.1</Version>
+		<Description>The following package allows for binding Service Bus Messages to Models without having to decode the body and deserialize it into a specific object. Abstract deserialization into WebJobs Startup.</Description>
+		<Company>Assimalign LLC</Company>
+		<Authors>Chase R. Crawford</Authors>
+		<PackageIcon Condition="'$(Configuration)' != 'Debug'">logo512.png"</PackageIcon>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.4.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="3.0.6" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="4.2.0" />
+  </ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)' != 'Debug'">
+		<None Include="..\..\..\..\..\logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{2ED37457-1BD7-4958-B51D-47B219DC9494}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B5392734-5281-4F98-9623-CD2EB01750DC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{98A8958A-1F5C-47F5-BC4E-7F613586E1D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bindings", "bindings", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "triggers", "triggers", "{EDBC6770-DFBB-49CC-8821-94EC874957F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cosmos", "cosmos", "{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47E125D7-4AFA-4284-9798-B07BED71682B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{044E53FF-C630-4C17-B6FB-DA0C7FC33443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{125D4D1E-6699-4857-A28B-95046509AED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2A2FFD05-E2F4-4F41-8574-63831959BCC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{57FC1840-9653-44B8-9DA7-AC4134F91CAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Validation", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Validation\Assimalign.Azure.WebJobs.Bindings.Validation.csproj", "{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Mapping", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Mapping\Assimalign.Azure.WebJobs.Bindings.Mapping.csproj", "{472F5724-0C24-46FF-95D7-D0082210F88D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0F508C87-541D-4293-BB0F-D4A5AF98284B}"
+	ProjectSection(SolutionItems) = preProject
+		bindings\Directory.Build.props = bindings\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.NotificationHub", "bindings\src\Assimalign.Azure.WebJobs.Bindings.NotificationHub\Assimalign.Azure.WebJobs.Bindings.NotificationHub.csproj", "{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.EventGrid", "bindings\src\Assimalign.Azure.WebJobs.Bindings.EventGrid\Assimalign.Azure.WebJobs.Bindings.EventGrid.csproj", "{F4B8D151-35FB-4A60-98EC-7187F869821B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.ServiceBus", "bindings\src\Assimalign.Azure.WebJobs.Bindings.ServiceBus\Assimalign.Azure.WebJobs.Bindings.ServiceBus.csproj", "{54E8DBB4-1C43-4682-AC14-F005C89007C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Storage", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Storage\Assimalign.Azure.WebJobs.Bindings.Storage.csproj", "{9F8C8D87-D423-47CD-A994-D37A9F50BE77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{02BB6840-D0B0-4C9A-B147-AAF972D24463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assimalign.Azure.WebJobs.Bindings.Benchmarks", "bindings\benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks.csproj", "{03A8E310-4EB1-4D20-868E-B5B40D99A904}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8350DACE-7095-4180-9873-2E9AD8A88524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472F5724-0C24-46FF-95D7-D0082210F88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472F5724-0C24-46FF-95D7-D0082210F88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472F5724-0C24-46FF-95D7-D0082210F88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472F5724-0C24-46FF-95D7-D0082210F88D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{EDBC6770-DFBB-49CC-8821-94EC874957F4} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{47E125D7-4AFA-4284-9798-B07BED71682B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{044E53FF-C630-4C17-B6FB-DA0C7FC33443} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{125D4D1E-6699-4857-A28B-95046509AED4} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
+		{2A2FFD05-E2F4-4F41-8574-63831959BCC5} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
+		{57FC1840-9653-44B8-9DA7-AC4134F91CAC} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
+		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{472F5724-0C24-46FF-95D7-D0082210F88D} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{0F508C87-541D-4293-BB0F-D4A5AF98284B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{F4B8D151-35FB-4A60-98EC-7187F869821B} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{54E8DBB4-1C43-4682-AC14-F005C89007C1} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{9F8C8D87-D423-47CD-A994-D37A9F50BE77} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{02BB6840-D0B0-4C9A-B147-AAF972D24463} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{03A8E310-4EB1-4D20-868E-B5B40D99A904} = {02BB6840-D0B0-4C9A-B147-AAF972D24463}
+		{8350DACE-7095-4180-9873-2E9AD8A88524} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8C7EB52-CEE8-43DA-99BE-BCB1396F9B24}
+	EndGlobalSection
+EndGlobal

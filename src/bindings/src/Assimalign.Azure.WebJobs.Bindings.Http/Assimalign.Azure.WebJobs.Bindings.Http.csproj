@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Version>1.0.0-pre.0.1</Version>
+		<Description>
+			This library adds extensibility to Azure WebJobs which hooks into
+			HttpTrigger Functions through the initialization pipeline by binding
+			the incoming payload to the registered model.
+		</Description>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageIcon>.assimaling.logo.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\.assimalign.logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+</Project>

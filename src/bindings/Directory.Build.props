@@ -1,0 +1,9 @@
+<Project>
+    <Import Project="..\Directory.Build.props"/>
+	<PropertyGroup>
+		<RootNamespace>Assimalign.Azure.WebJobs.Bindings</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.33" />
+	</ItemGroup>
+</Project>

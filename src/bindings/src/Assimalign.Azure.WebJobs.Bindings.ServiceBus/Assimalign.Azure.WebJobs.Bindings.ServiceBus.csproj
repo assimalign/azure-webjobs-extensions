@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Description>
+			The following package allows for binding Service Bus Messages 
+			to Models without having to decode the body and deserialize it 
+			into a specific object. Abstract deserialization into WebJobs Startup.
+		</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>.assimalign.logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.4.1" />
+		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.3.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\..\.assimalign.logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>

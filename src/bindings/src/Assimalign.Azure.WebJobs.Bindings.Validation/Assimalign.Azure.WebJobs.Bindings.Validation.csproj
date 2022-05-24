@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>.assimalign.logo.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Assimalign.Extensions.Validation" Version="1.0.0-pre.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\..\.assimalign.logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>
