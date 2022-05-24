@@ -25,6 +25,8 @@ public sealed class ValidatorBindingAttribute : Attribute
         this.ValidatorName = validatorName;
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public string ValidatorName { get; } = "default";
 }

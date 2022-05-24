@@ -43,8 +43,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.EventGrid", "bindings\src\Assimalign.Azure.WebJobs.Bindings.EventGrid\Assimalign.Azure.WebJobs.Bindings.EventGrid.csproj", "{F4B8D151-35FB-4A60-98EC-7187F869821B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.ServiceBus", "bindings\src\Assimalign.Azure.WebJobs.Bindings.ServiceBus\Assimalign.Azure.WebJobs.Bindings.ServiceBus.csproj", "{54E8DBB4-1C43-4682-AC14-F005C89007C1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Storage", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Storage\Assimalign.Azure.WebJobs.Bindings.Storage.csproj", "{9F8C8D87-D423-47CD-A994-D37A9F50BE77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{02BB6840-D0B0-4C9A-B147-AAF972D24463}"
@@ -52,6 +50,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assimalign.Azure.WebJobs.Bindings.Benchmarks", "bindings\benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks.csproj", "{03A8E310-4EB1-4D20-868E-B5B40D99A904}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8350DACE-7095-4180-9873-2E9AD8A88524}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml = ..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml
+		..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml = ..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,10 +77,6 @@ Global
 		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54E8DBB4-1C43-4682-AC14-F005C89007C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -106,7 +104,6 @@ Global
 		{0F508C87-541D-4293-BB0F-D4A5AF98284B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
 		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF} = {47E125D7-4AFA-4284-9798-B07BED71682B}
 		{F4B8D151-35FB-4A60-98EC-7187F869821B} = {47E125D7-4AFA-4284-9798-B07BED71682B}
-		{54E8DBB4-1C43-4682-AC14-F005C89007C1} = {47E125D7-4AFA-4284-9798-B07BED71682B}
 		{9F8C8D87-D423-47CD-A994-D37A9F50BE77} = {47E125D7-4AFA-4284-9798-B07BED71682B}
 		{02BB6840-D0B0-4C9A-B147-AAF972D24463} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
 		{03A8E310-4EB1-4D20-868E-B5B40D99A904} = {02BB6840-D0B0-4C9A-B147-AAF972D24463}

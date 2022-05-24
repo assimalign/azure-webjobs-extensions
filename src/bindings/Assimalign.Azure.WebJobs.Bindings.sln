@@ -1,14 +1,94 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{B40E93C2-3733-45A1-9882-52615BF763DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Benchmarks", "benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks.csproj", "{7181BE76-8D51-439F-9442-52A941697F20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CD2385AE-9704-426E-9434-6BB26E0E092A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.EventGrid", "src\Assimalign.Azure.WebJobs.Bindings.EventGrid\Assimalign.Azure.WebJobs.Bindings.EventGrid.csproj", "{50BD3DF7-26FF-4992-AC1A-34CCE60596E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Http", "src\Assimalign.Azure.WebJobs.Bindings.Http\Assimalign.Azure.WebJobs.Bindings.Http.csproj", "{902A2785-174C-4C22-85FF-ACB5CE420CC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Mapping", "src\Assimalign.Azure.WebJobs.Bindings.Mapping\Assimalign.Azure.WebJobs.Bindings.Mapping.csproj", "{5899A17A-9382-4D98-9540-12C1B2CB4AD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.NotificationHub", "src\Assimalign.Azure.WebJobs.Bindings.NotificationHub\Assimalign.Azure.WebJobs.Bindings.NotificationHub.csproj", "{B6E1248B-A733-4481-8E97-B0AA93AD192B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.OData", "src\Assimalign.Azure.WebJobs.Bindings.OData\Assimalign.Azure.WebJobs.Bindings.OData.csproj", "{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Storage", "src\Assimalign.Azure.WebJobs.Bindings.Storage\Assimalign.Azure.WebJobs.Bindings.Storage.csproj", "{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Validation", "src\Assimalign.Azure.WebJobs.Bindings.Validation\Assimalign.Azure.WebJobs.Bindings.Validation.csproj", "{FC27B79D-A682-4E4F-B98C-139CF2D63B37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{4F4CC5C8-EDED-4CF2-8152-A0FDB3BA83D2}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B0E51613-6A3F-403D-9D30-ACADCD5D9500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{F62CB548-3277-4EE9-8683-A017FA3128A7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml = ..\..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml
+		..\..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml = ..\..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7181BE76-8D51-439F-9442-52A941697F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7181BE76-8D51-439F-9442-52A941697F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7181BE76-8D51-439F-9442-52A941697F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7181BE76-8D51-439F-9442-52A941697F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BD3DF7-26FF-4992-AC1A-34CCE60596E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BD3DF7-26FF-4992-AC1A-34CCE60596E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BD3DF7-26FF-4992-AC1A-34CCE60596E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BD3DF7-26FF-4992-AC1A-34CCE60596E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902A2785-174C-4C22-85FF-ACB5CE420CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902A2785-174C-4C22-85FF-ACB5CE420CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902A2785-174C-4C22-85FF-ACB5CE420CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902A2785-174C-4C22-85FF-ACB5CE420CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5899A17A-9382-4D98-9540-12C1B2CB4AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5899A17A-9382-4D98-9540-12C1B2CB4AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5899A17A-9382-4D98-9540-12C1B2CB4AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5899A17A-9382-4D98-9540-12C1B2CB4AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6E1248B-A733-4481-8E97-B0AA93AD192B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E1248B-A733-4481-8E97-B0AA93AD192B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E1248B-A733-4481-8E97-B0AA93AD192B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E1248B-A733-4481-8E97-B0AA93AD192B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC27B79D-A682-4E4F-B98C-139CF2D63B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC27B79D-A682-4E4F-B98C-139CF2D63B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC27B79D-A682-4E4F-B98C-139CF2D63B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC27B79D-A682-4E4F-B98C-139CF2D63B37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7181BE76-8D51-439F-9442-52A941697F20} = {B40E93C2-3733-45A1-9882-52615BF763DF}
+		{50BD3DF7-26FF-4992-AC1A-34CCE60596E4} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{902A2785-174C-4C22-85FF-ACB5CE420CC7} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{5899A17A-9382-4D98-9540-12C1B2CB4AD9} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{B6E1248B-A733-4481-8E97-B0AA93AD192B} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{2B7AAA57-7C6A-4B42-B23F-3F1C1493779A} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{77931ECC-C1B9-41F2-BC8C-055C75FCC2D9} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+		{FC27B79D-A682-4E4F-B98C-139CF2D63B37} = {CD2385AE-9704-426E-9434-6BB26E0E092A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAFD24E2-90CD-440C-8C10-0FCEDBCFD8F2}
 	EndGlobalSection
 EndGlobal
