@@ -12,9 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B5392734
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{98A8958A-1F5C-47F5-BC4E-7F613586E1D6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bindings", "bindings", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "triggers", "triggers", "{EDBC6770-DFBB-49CC-8821-94EC874957F4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webjobs", "webjobs", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cosmos", "cosmos", "{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847}"
 EndProject
@@ -24,36 +22,44 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{044E53FF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{125D4D1E-6699-4857-A28B-95046509AED4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2A2FFD05-E2F4-4F41-8574-63831959BCC5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{57FC1840-9653-44B8-9DA7-AC4134F91CAC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Validation", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Validation\Assimalign.Azure.WebJobs.Bindings.Validation.csproj", "{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Mapping", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Mapping\Assimalign.Azure.WebJobs.Bindings.Mapping.csproj", "{472F5724-0C24-46FF-95D7-D0082210F88D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0F508C87-541D-4293-BB0F-D4A5AF98284B}"
 	ProjectSection(SolutionItems) = preProject
-		bindings\Directory.Build.props = bindings\Directory.Build.props
+		webjobs\Directory.Build.props = webjobs\Directory.Build.props
 	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.NotificationHub", "bindings\src\Assimalign.Azure.WebJobs.Bindings.NotificationHub\Assimalign.Azure.WebJobs.Bindings.NotificationHub.csproj", "{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.EventGrid", "bindings\src\Assimalign.Azure.WebJobs.Bindings.EventGrid\Assimalign.Azure.WebJobs.Bindings.EventGrid.csproj", "{F4B8D151-35FB-4A60-98EC-7187F869821B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Bindings.Storage", "bindings\src\Assimalign.Azure.WebJobs.Bindings.Storage\Assimalign.Azure.WebJobs.Bindings.Storage.csproj", "{9F8C8D87-D423-47CD-A994-D37A9F50BE77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{02BB6840-D0B0-4C9A-B147-AAF972D24463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assimalign.Azure.WebJobs.Bindings.Benchmarks", "bindings\benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks\Assimalign.Azure.WebJobs.Bindings.Benchmarks.csproj", "{03A8E310-4EB1-4D20-868E-B5B40D99A904}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8350DACE-7095-4180-9873-2E9AD8A88524}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml = ..\.github\workflows\assimalign.azure.webjobs.bindings.mapping.yml
-		..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml = ..\.github\workflows\assimalign.azure.webjobs.bindings.validation.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "host", "host", "{56F68691-49B6-455B-BB49-67253D8C68AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Host", "web\Assimalign.Azure.WebJobs.Host\Assimalign.Azure.WebJobs.Host.csproj", "{CD51CC70-B166-4633-8C04-287FDD0E9BCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Validation", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Validation\Assimalign.Azure.WebJobs.Extensions.Validation.csproj", "{19F38782-21D7-435B-A74C-4D7E5E13719F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Storage", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Storage\Assimalign.Azure.WebJobs.Extensions.Storage.csproj", "{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Scheduler", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Scheduler\Assimalign.Azure.WebJobs.Extensions.Scheduler.csproj", "{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.OData", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.OData\Assimalign.Azure.WebJobs.Extensions.OData.csproj", "{A16F4E4D-D483-4665-A79E-15A13E53CC88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.NotificationHub", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.NotificationHub\Assimalign.Azure.WebJobs.Extensions.NotificationHub.csproj", "{07A4334D-5CDF-4998-9D71-64D770DA32B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Mapping", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Mapping\Assimalign.Azure.WebJobs.Extensions.Mapping.csproj", "{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Http", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Http\Assimalign.Azure.WebJobs.Extensions.Http.csproj", "{2AD5546C-0417-485F-9E7C-69AB7B7033BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.EventMediation", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.EventMediation\Assimalign.Azure.WebJobs.Extensions.EventMediation.csproj", "{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.EventGrid", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.EventGrid\Assimalign.Azure.WebJobs.Extensions.EventGrid.csproj", "{E3311899-B37E-44F7-8CFE-DD676048EC3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.DData", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.DData\Assimalign.Azure.WebJobs.Extensions.DData.csproj", "{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Benchmarks", "webjobs\benchmarks\Assimalign.Azure.WebJobs.Extensions.Benchmarks\Assimalign.Azure.WebJobs.Extensions.Benchmarks.csproj", "{7722F017-AAEC-412D-AEFE-FB203B10EA8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,53 +67,80 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{472F5724-0C24-46FF-95D7-D0082210F88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{472F5724-0C24-46FF-95D7-D0082210F88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{472F5724-0C24-46FF-95D7-D0082210F88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{472F5724-0C24-46FF-95D7-D0082210F88D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4B8D151-35FB-4A60-98EC-7187F869821B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F8C8D87-D423-47CD-A994-D37A9F50BE77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03A8E310-4EB1-4D20-868E-B5B40D99A904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
-		{EDBC6770-DFBB-49CC-8821-94EC874957F4} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
 		{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
 		{47E125D7-4AFA-4284-9798-B07BED71682B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
 		{044E53FF-C630-4C17-B6FB-DA0C7FC33443} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
 		{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
-		{125D4D1E-6699-4857-A28B-95046509AED4} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
-		{2A2FFD05-E2F4-4F41-8574-63831959BCC5} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
-		{57FC1840-9653-44B8-9DA7-AC4134F91CAC} = {EDBC6770-DFBB-49CC-8821-94EC874957F4}
-		{FA1BF1EE-4956-4B08-B634-0D0B9FF8EF87} = {47E125D7-4AFA-4284-9798-B07BED71682B}
-		{472F5724-0C24-46FF-95D7-D0082210F88D} = {47E125D7-4AFA-4284-9798-B07BED71682B}
 		{0F508C87-541D-4293-BB0F-D4A5AF98284B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
-		{D58E0C19-E3C1-49BA-9D58-4FF7AC6E1CDF} = {47E125D7-4AFA-4284-9798-B07BED71682B}
-		{F4B8D151-35FB-4A60-98EC-7187F869821B} = {47E125D7-4AFA-4284-9798-B07BED71682B}
-		{9F8C8D87-D423-47CD-A994-D37A9F50BE77} = {47E125D7-4AFA-4284-9798-B07BED71682B}
 		{02BB6840-D0B0-4C9A-B147-AAF972D24463} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
-		{03A8E310-4EB1-4D20-868E-B5B40D99A904} = {02BB6840-D0B0-4C9A-B147-AAF972D24463}
 		{8350DACE-7095-4180-9873-2E9AD8A88524} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{56F68691-49B6-455B-BB49-67253D8C68AA} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB} = {56F68691-49B6-455B-BB49-67253D8C68AA}
+		{19F38782-21D7-435B-A74C-4D7E5E13719F} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F} = {02BB6840-D0B0-4C9A-B147-AAF972D24463}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8C7EB52-CEE8-43DA-99BE-BCB1396F9B24}
