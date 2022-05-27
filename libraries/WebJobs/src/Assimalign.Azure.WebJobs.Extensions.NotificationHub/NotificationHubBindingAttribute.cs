@@ -24,10 +24,25 @@ public sealed class NotificationHubBindingAttribute : Attribute, IConnectionProv
     /// <summary>
     /// 
     /// </summary>
+    /// <param name="path"></param>
+    /// <param name="settingsName"></param>
+    public NotificationHubBindingAttribute(string path, string settingsName)
+    {
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public string Path { get; set; }
 
     /// <summary>
     /// 
     /// </summary>
     public string Connection { get; set; }
+
+    /// <summary>
+    /// Specifies which settings to use on which is configured on startup.
+    /// </summary>
+    public string SettingsName { get; set; }
 }

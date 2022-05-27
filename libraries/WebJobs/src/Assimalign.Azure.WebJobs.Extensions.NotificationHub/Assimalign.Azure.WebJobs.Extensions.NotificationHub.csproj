@@ -6,8 +6,16 @@
 		<PackageIcon>.assimalign.logo.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Assimalign.Extensions.Validation" Version="1.0.0-pre.1.0" />
+		<PackageReference Include="Microsoft.Azure.NotificationHubs" Version="4.1.0" />
 	</ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
 	<ItemGroup>
 		<None Include="..\..\..\..\.assimalign.logo.png">
 			<Pack>True</Pack>

@@ -12,12 +12,7 @@ namespace Assimalign.Azure.WebJobs.Extensions;
 public interface IEventContext
 {
     /// <summary>
-    /// 
+    /// An object to be used to pass state variables down to the event listeners.
     /// </summary>
     object State { get; }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    object StateChanges { get; }
 }

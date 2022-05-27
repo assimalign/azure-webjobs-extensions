@@ -43,15 +43,20 @@ public class EventMediationTriggerSample
 
     [FunctionName("ExampleTriggerListenForInAppEvent01")]
     public async Task Run1Async(
-        [EventMediationTrigger("test-mediator", "test-event-01")] IEventContext context)
+        [EventMediationTrigger("test-mediator", "test-event-01")] IEventContext context, 
+        ILogger logger)
     {
-
+        if (context is EContext econtext)
+        {
+            logger.LogInformation("'test-event-01' was fired for 'test-mediator'.");
+        }
     }
 
     [FunctionName("ExampleTriggerListenForInAppEvent02")]
     public async Task Run2Async(
-        [EventMediationTrigger("test-mediator", "test-event-02")] IEventContext context)
+        [EventMediationTrigger("test-mediator", "test-event-02")] IEventContext context,
+        ILogger logger)
     {
-        throw new Exception();
+        logger.LogInformation("'test-event-02' was fired for 'test-mediator'.");
     }
 }

@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{2ED37457-1BD7-4958-B51D-47B219DC9494}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{2ED37457-1BD7-4958-B51D-47B219DC9494}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B5392734-5281-4F98-9623-CD2EB01750DC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B5392734-5281-4F98-9623-CD2EB01750DC}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{98A8958A-1F5C-47F5-BC4E-7F613586E1D6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{98A8958A-1F5C-47F5-BC4E-7F613586E1D6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webjobs", "webjobs", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebJobs", "WebJobs", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cosmos", "cosmos", "{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847}"
 EndProject
@@ -31,7 +31,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8350DACE-7095-4180-9873-2E9AD8A88524}"
 	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\assimalign.azure.webjobs.extensions.eventmediation.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.eventmediation.yml
 		..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.notificationhub.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.notificationhub.yml
 		..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml
 	EndProjectSection
 EndProject
