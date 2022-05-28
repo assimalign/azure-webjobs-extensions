@@ -8,9 +8,9 @@ on:
     - users/**
     - features/**
     paths: 
-    - 'libraries/webjobs/src/**'
+    - 'libraries/WebJobs/src/**'
     - 'libraries/Directory.Build.props'                                     # When the Global Props File Changes
-    - 'libraries/webjobs/Directory.Build.props'
+    - 'libraries/WebJobs/Directory.Build.props'
     - '.github/workflows/assimalign.azure.webjobs.extensions.eventmediation.yml'        # When Pipeline File Changes
 
 jobs:
@@ -32,11 +32,11 @@ jobs:
     
     - name: Restore Project
       run: dotnet restore 
-      working-directory: './libraries/webjobs/src/Assimalign.Azure.WebJobs.Extensions.EventMediation'
+      working-directory: './libraries/WebJobs/src/Assimalign.Azure.WebJobs.Extensions.EventMediation'
     
     - name: Build Project
       run: dotnet build --configuration Release --no-restore
-      working-directory: './libraries/webjobs/src/Assimalign.Azure.WebJobs.Extensions.EventMediation'
+      working-directory: './libraries/WebJobs/src/Assimalign.Azure.WebJobs.Extensions.EventMediation'
 
     # - name: Restore Unit Tests Project
     #   run: dotnet restore 
