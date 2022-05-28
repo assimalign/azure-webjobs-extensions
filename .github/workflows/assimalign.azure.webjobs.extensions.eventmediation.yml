@@ -40,11 +40,11 @@ jobs:
 
     # - name: Restore Unit Tests Project
     #   run: dotnet restore 
-    #   working-directory: './libraries/webjobs/tests/Assimalign.Azure.WebJobs.Extensions.NotificationHubTests'
+    #   working-directory: './libraries/WebJobs/tests/Assimalign.Azure.WebJobs.Extensions.NotificationHubTests'
 
     # - name: Run Unit Tests
     #   run: dotnet test --no-restore --verbosity normal
-    #   working-directory: './libraries/webjobs/tests/Assimalign.Azure.WebJobs.Extensions.NotificationHubTests'
+    #   working-directory: './libraries/WebJobs/tests/Assimalign.Azure.WebJobs.Extensions.NotificationHubTests'
     
     - name: Publish Nuget Package
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
