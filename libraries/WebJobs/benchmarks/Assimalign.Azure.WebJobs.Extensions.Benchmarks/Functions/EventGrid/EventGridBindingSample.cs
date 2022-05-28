@@ -12,12 +12,27 @@ using Azure.Messaging.EventGrid;
 
 namespace Assimalign.Azure.WebJobs.Extensions.Functions;
 
-
-
-
 [EventGridAccount("AzureEventGrid")]
 public class EventGridBindingSample
 {
+
+
+    [FunctionName("%FunctionName%")]
+    public async Task<IActionResult> RunNameTestAsync(
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "action")] HttpRequest request,
+        ILogger logger)
+    {
+        try
+        {
+            throw new NotImplementedException();
+        }
+        catch (Exception exception)
+        {
+            throw exception;
+        }
+    }
+
+
     [FunctionName("ExampleBindEventGridInterface")]
     public async Task<IActionResult> BindValidatorAsync(
         [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "eventGridClient")] HttpRequest request,

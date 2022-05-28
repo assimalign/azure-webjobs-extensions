@@ -18,6 +18,6 @@ internal sealed class EventMediationStartup : IWebJobsStartup
         //    .SelectMany(x=>x.)
 
         builder.Services.AddSingleton<IEventMediatorFactory, EventMediatorFactoryDefault>();
-        builder.AddExtension<EventMediationTriggerExtensionConfigProvider>();
+        builder.AddExtension<EventMediationExtensionConfigProvider>();
     }
 }

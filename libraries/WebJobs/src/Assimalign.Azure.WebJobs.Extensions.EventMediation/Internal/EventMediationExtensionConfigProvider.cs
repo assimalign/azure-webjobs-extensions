@@ -10,15 +10,15 @@ using Microsoft.Extensions.Logging;
 
 namespace Assimalign.Azure.WebJobs.Extensions;
 
-[Extension("EventMediationExtension")]
-internal sealed class EventMediationTriggerExtensionConfigProvider : IExtensionConfigProvider
+[Extension("EventMediationExtensions")]
+internal sealed class EventMediationExtensionConfigProvider : IExtensionConfigProvider
 {
     private readonly ILogger logger;
     private readonly IEventMediatorFactory factory;
 
-    public EventMediationTriggerExtensionConfigProvider(
+    public EventMediationExtensionConfigProvider(
         IEventMediatorFactory factory, 
-        ILogger<EventMediationTriggerExtensionConfigProvider> logger)
+        ILogger<EventMediationExtensionConfigProvider> logger)
     {
         this.factory = factory;
         this.logger = logger;
