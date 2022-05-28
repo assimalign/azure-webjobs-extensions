@@ -10,6 +10,7 @@ namespace Assimalign.Azure.WebJobs.Extensions;
 [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false)]
 public sealed class EventMediationTriggerAttribute : Attribute
 {
+
     /// <summary>
     /// 
     /// </summary>
