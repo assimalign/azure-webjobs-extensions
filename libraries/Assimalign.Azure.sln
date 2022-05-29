@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{2ED37457-1BD7-4958-B51D-47B219DC9494}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B5392734-5281-4F98-9623-CD2EB01750DC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{98A8958A-1F5C-47F5-BC4E-7F613586E1D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebJobs", "WebJobs", "{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cosmos", "Cosmos", "{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47E125D7-4AFA-4284-9798-B07BED71682B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{044E53FF-C630-4C17-B6FB-DA0C7FC33443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0F508C87-541D-4293-BB0F-D4A5AF98284B}"
+	ProjectSection(SolutionItems) = preProject
+		webjobs\Directory.Build.props = webjobs\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{02BB6840-D0B0-4C9A-B147-AAF972D24463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8350DACE-7095-4180-9873-2E9AD8A88524}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\assimalign.azure.webjobs.extensions.eventmediation.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.eventmediation.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.mapping.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.notificationhub.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.notificationhub.yml
+		..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml = ..\.github\workflows\assimalign.azure.webjobs.extensions.validation.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "host", "host", "{56F68691-49B6-455B-BB49-67253D8C68AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Host", "web\Assimalign.Azure.WebJobs.Host\Assimalign.Azure.WebJobs.Host.csproj", "{CD51CC70-B166-4633-8C04-287FDD0E9BCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Validation", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Validation\Assimalign.Azure.WebJobs.Extensions.Validation.csproj", "{19F38782-21D7-435B-A74C-4D7E5E13719F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Storage", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Storage\Assimalign.Azure.WebJobs.Extensions.Storage.csproj", "{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Scheduler", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Scheduler\Assimalign.Azure.WebJobs.Extensions.Scheduler.csproj", "{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.OData", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.OData\Assimalign.Azure.WebJobs.Extensions.OData.csproj", "{A16F4E4D-D483-4665-A79E-15A13E53CC88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.NotificationHub", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.NotificationHub\Assimalign.Azure.WebJobs.Extensions.NotificationHub.csproj", "{07A4334D-5CDF-4998-9D71-64D770DA32B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Mapping", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Mapping\Assimalign.Azure.WebJobs.Extensions.Mapping.csproj", "{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Http", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.Http\Assimalign.Azure.WebJobs.Extensions.Http.csproj", "{2AD5546C-0417-485F-9E7C-69AB7B7033BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.EventMediation", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.EventMediation\Assimalign.Azure.WebJobs.Extensions.EventMediation.csproj", "{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.EventGrid", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.EventGrid\Assimalign.Azure.WebJobs.Extensions.EventGrid.csproj", "{E3311899-B37E-44F7-8CFE-DD676048EC3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.DData", "webjobs\src\Assimalign.Azure.WebJobs.Extensions.DData\Assimalign.Azure.WebJobs.Extensions.DData.csproj", "{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assimalign.Azure.WebJobs.Extensions.Benchmarks", "webjobs\benchmarks\Assimalign.Azure.WebJobs.Extensions.Benchmarks\Assimalign.Azure.WebJobs.Extensions.Benchmarks.csproj", "{7722F017-AAEC-412D-AEFE-FB203B10EA8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F38782-21D7-435B-A74C-4D7E5E13719F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{E3761DF8-0E5A-46A0-A7F8-1CD2E51BF847} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{47E125D7-4AFA-4284-9798-B07BED71682B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{044E53FF-C630-4C17-B6FB-DA0C7FC33443} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{59997A21-8D03-4FDB-B3C5-5F6AA0EE21E0} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{0F508C87-541D-4293-BB0F-D4A5AF98284B} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{02BB6840-D0B0-4C9A-B147-AAF972D24463} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{8350DACE-7095-4180-9873-2E9AD8A88524} = {506BA2F1-D147-4B0A-A8B5-4DFCA5760E9C}
+		{56F68691-49B6-455B-BB49-67253D8C68AA} = {2ED37457-1BD7-4958-B51D-47B219DC9494}
+		{CD51CC70-B166-4633-8C04-287FDD0E9BCB} = {56F68691-49B6-455B-BB49-67253D8C68AA}
+		{19F38782-21D7-435B-A74C-4D7E5E13719F} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{3AEC29B5-4FB9-47CC-BCAA-E85B68AED203} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{BB82E11A-CBBC-48C3-8EB1-3A03C30D237D} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{A16F4E4D-D483-4665-A79E-15A13E53CC88} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{07A4334D-5CDF-4998-9D71-64D770DA32B9} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{8C5E5D63-FD18-4312-AB35-53ECF97C7E00} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{2AD5546C-0417-485F-9E7C-69AB7B7033BE} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{53F06F39-2DF7-4DB3-BA4D-F103909E44FB} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{E3311899-B37E-44F7-8CFE-DD676048EC3E} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{8C7A7F3D-32B6-4BC8-81DA-34D3FC404E79} = {47E125D7-4AFA-4284-9798-B07BED71682B}
+		{7722F017-AAEC-412D-AEFE-FB203B10EA8F} = {02BB6840-D0B0-4C9A-B147-AAF972D24463}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8C7EB52-CEE8-43DA-99BE-BCB1396F9B24}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+	  
+	<Using Include="Assimalign.Azure.WebJobs.Extensions" />
+    <ProjectReference Include="..\..\src\Assimalign.Azure.WebJobs.Extensions.EventGrid\Assimalign.Azure.WebJobs.Extensions.EventGrid.csproj" />
+    <ProjectReference Include="..\..\src\Assimalign.Azure.WebJobs.Extensions.EventMediation\Assimalign.Azure.WebJobs.Extensions.EventMediation.csproj" />
+    <ProjectReference Include="..\..\src\Assimalign.Azure.WebJobs.Extensions.Mapping\Assimalign.Azure.WebJobs.Extensions.Mapping.csproj" />
+    <ProjectReference Include="..\..\src\Assimalign.Azure.WebJobs.Extensions.NotificationHub\Assimalign.Azure.WebJobs.Extensions.NotificationHub.csproj" />
+    <ProjectReference Include="..\..\src\Assimalign.Azure.WebJobs.Extensions.Validation\Assimalign.Azure.WebJobs.Extensions.Validation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

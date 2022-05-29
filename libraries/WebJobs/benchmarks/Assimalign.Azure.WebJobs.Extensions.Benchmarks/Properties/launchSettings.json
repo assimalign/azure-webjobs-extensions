@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Assimalign.Azure.WebJobs.Bindings.Benchmarks": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7013",
+      "launchBrowser": false
+    }
+  }
+}
