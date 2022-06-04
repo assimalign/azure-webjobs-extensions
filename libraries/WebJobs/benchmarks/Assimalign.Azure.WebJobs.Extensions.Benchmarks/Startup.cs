@@ -44,85 +44,9 @@ public class Startup : IWebJobsStartup
             });
         });
 
-        builder.AddExtension<ConfigProviderTest>();
-
         builder.AddEventGridBinding();
     }
 
     
-}
 
-
-public class Test
-{
-
-}
-
-public class ConfigProviderTest : IExtensionConfigProvider
-{
-    public void Initialize(ExtensionConfigContext context)
-    {
-        context.AddBindingRule<HttpTriggerAttribute>()
-            .BindToTrigger(new ConfigBindingProvider());
-    }
-}
-
-public class ConfigBindingProvider : ITriggerBindingProvider
-{
-    public Task<ITriggerBinding> TryCreateAsync(TriggerBindingProviderContext context)
-    {
-        return Task.FromResult<ITriggerBinding>(new ConfigTestBinding());
-    }
-}
-
-public class ConfigTestBinding : ITriggerBinding
-{
-    public Type TriggerValueType => typeof(Test);
-
-    public IReadOnlyDictionary<string, Type> BindingDataContract => new Dictionary<string, Type>();
-
-    public Task<ITriggerData> BindAsync(object value, ValueBindingContext context)
-    {
-        return Task.FromResult<ITriggerData>(new TriggerData(null, new Dictionary<string, object>()));
-    }
-
-    public Task<IListener> CreateListenerAsync(ListenerFactoryContext context)
-    {
-
-        return Task.FromResult<IListener>(new NListener(context.Executor));
-    }
-
-    public ParameterDescriptor ToParameterDescriptor()
-    {
-        return default;
-    }
-
-
-    public class NListener : IListener
-    {
-
-        public NListener(ITriggeredFunctionExecutor executer)
-        {
-
-        }
-        public void Cancel()
-        {
-           
-        }
-
-        public void Dispose()
-        {
-            
-        }
-
-        public Task StartAsync(CancellationToken cancellationToken)
-        {
-            return Task.CompletedTask;
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            return Task.CompletedTask;
-        }
-    }
 }

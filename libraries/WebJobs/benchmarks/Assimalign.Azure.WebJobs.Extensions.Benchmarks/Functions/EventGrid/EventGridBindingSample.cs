@@ -17,7 +17,7 @@ public class EventGridBindingSample
 {
 
 
-    [FunctionName("%FunctionName%")]
+    [FunctionName("ExampleEventGridBinding")]
     public async Task<IActionResult> RunNameTestAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "action")] HttpRequest request,
         ILogger logger)
