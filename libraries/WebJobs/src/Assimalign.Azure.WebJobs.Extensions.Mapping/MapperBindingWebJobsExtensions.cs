@@ -24,6 +24,7 @@ public static class MapperBindingWebJobsExtensions
             factory.AddMapper("default", configure);
         });
     }
+
     /// <summary>
     /// 
     /// </summary>
