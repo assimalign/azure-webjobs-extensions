@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using Microsoft.Azure.WebJobs.Description;
 using Microsoft.Azure.WebJobs.Host.Config;
 using Microsoft.Extensions.Logging;
@@ -17,7 +12,7 @@ internal sealed class EventMediationExtensionConfigProvider : IExtensionConfigPr
     private readonly IEventMediatorFactory factory;
 
     public EventMediationExtensionConfigProvider(
-        IEventMediatorFactory factory, 
+        IEventMediatorFactory factory,
         ILogger<EventMediationExtensionConfigProvider> logger)
     {
         this.factory = factory;
@@ -38,7 +33,7 @@ internal sealed class EventMediationExtensionConfigProvider : IExtensionConfigPr
             });
 
         var bindingRule = context.AddBindingRule<EventMediationTriggerAttribute>();
-            bindingRule.BindToTrigger<IEventContext>(new EventMediationTriggerBindingProvider(factory, logger));
-        bindingRule.AddConverter<IEventContext, som >
+
+        bindingRule.BindToTrigger<IEventContext>(new EventMediationTriggerBindingProvider(factory, logger));
     }
 }
