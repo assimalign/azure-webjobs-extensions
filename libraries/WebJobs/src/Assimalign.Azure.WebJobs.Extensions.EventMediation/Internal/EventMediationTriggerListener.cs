@@ -40,7 +40,6 @@ internal sealed class EventMediationTriggerListener : IListener, IEventHandler
     {
         cancellationTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
-
         return Task.CompletedTask;
     }
 
