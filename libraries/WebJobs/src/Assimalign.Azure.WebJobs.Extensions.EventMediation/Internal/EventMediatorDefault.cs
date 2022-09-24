@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Assimalign.Azure.WebJobs.Extensions;
 
-internal sealed class EventMediatorDefault : IEventMediator
+internal class EventMediatorDefault : IEventMediator
 {
     private int notified;
     private readonly ILogger logger;
@@ -46,5 +46,17 @@ internal sealed class EventMediatorDefault : IEventMediator
         }
 
         notified = 0;
+    }
+}
+
+
+internal sealed class EventMediatorDefault<TEventId> : EventMediatorDefault, IEventMediator<TEventId>
+    where TEventId : struct
+{
+    public EventMediatorDefault(ILogger<EventMediatorDefault<TEventId>> logger) : base(logger) {  }
+
+    public void Notify(TEventId eventId, IEventContext context)
+    {
+       base.Notify(eventId.ToString(), context);
     }
 }

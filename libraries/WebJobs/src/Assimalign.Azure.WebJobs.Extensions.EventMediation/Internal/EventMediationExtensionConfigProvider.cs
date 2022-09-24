@@ -39,6 +39,5 @@ internal sealed class EventMediationExtensionConfigProvider : IExtensionConfigPr
 
         var bindingRule = context.AddBindingRule<EventMediationTriggerAttribute>();
             bindingRule.BindToTrigger<IEventContext>(new EventMediationTriggerBindingProvider(factory, logger));
-        bindingRule.AddConverter<IEventContext, som >
     }
 }

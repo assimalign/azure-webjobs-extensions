@@ -24,3 +24,11 @@ public interface IEventMediator
     /// <param name="context"></param>
     void Notify(string eventId, IEventContext context);
 }
+
+/// <inheritdoc />
+public interface IEventMediator<in TEventId> : IEventMediator
+    where TEventId : struct
+{
+    /// <inheritdoc />
+    void Notify(TEventId eventId, IEventContext context);
+}
